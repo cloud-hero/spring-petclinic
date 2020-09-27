@@ -4,7 +4,7 @@ metadata:
   name: spring-petclinic
   namespace: spring-petclinic
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: spring-petclinic
   ports:

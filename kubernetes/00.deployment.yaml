@@ -18,6 +18,13 @@ spec:
       containers:
       - name: spring-petclinic
         image: cloudhero/spring-petclinic
+        resources:
+          requests:
+            memory: "500Mi"
+            cpu: "500m"
+          limits:
+            memory: "500Mi"
+            cpu: "500m"
         ports:
         - containerPort: 8080
         readinessProbe:
